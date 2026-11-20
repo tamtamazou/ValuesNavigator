@@ -109,10 +109,7 @@ if st.button("🔍 価値観を分析する"):
                 response = client.responses.create(
                     model=model,
                     input=prompt,
-                    max_output_tokens=4000,
-                    reasoning={
-                        "effort": "low"
-                    }
+                    max_output_tokens=4000
                 )
 
                 answer = response.output_text
